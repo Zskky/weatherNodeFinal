@@ -45,7 +45,7 @@ jobs:
     permissions:
       id-token: write #This is required for requesting the JWT
 
-    steps:
+    steps: #helpz
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
