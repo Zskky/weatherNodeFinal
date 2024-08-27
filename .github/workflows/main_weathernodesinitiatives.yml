@@ -58,11 +58,11 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_1EC4C0D597C3460E9C22059618033A46 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F4E41129B7DD4DB9A3987606BD78E99C }}
 
-      - name: 'Deploy to Azure Web App' #nothing is used
+      - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'weatherNodesInitiatives'
-          slot-name: 'Production'
+          #slot-name: 'Production'
           package: .
           
